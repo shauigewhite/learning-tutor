@@ -1,0 +1,13 @@
+{
+  "name": "learning-tutor",
+  "owner": {
+    "name": "shuaige white"
+  },
+  "plugins": [
+    {
+      "name": "learning-tutor",
+      "source": "./",
+      "version": "1.0.0"
+    }
+  ]
+}
