@@ -17,20 +17,35 @@ An AI-powered personal tutor plugin for [Claude Code](https://docs.anthropic.com
 
 ### Install
 
-Clone the repo and register it as a local plugin:
+Add the following to your `~/.claude/settings.json`:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/learning-tutor.git
-claude settings add pluginDirs ./learning-tutor
+```json
+{
+  "extraKnownMarketplaces": {
+    "learning-tutor": {
+      "source": {
+        "source": "settings",
+        "name": "learning-tutor",
+        "plugins": [
+          {
+            "name": "learning-tutor",
+            "source": {
+              "source": "github",
+              "repo": "shauigewhite/learning-tutor"
+            }
+          }
+        ],
+        "owner": { "name": "shuaige white" }
+      }
+    }
+  },
+  "enabledPlugins": {
+    "learning-tutor@learning-tutor": true
+  }
+}
 ```
 
-Or specify an absolute path:
-
-```bash
-claude settings add pluginDirs /path/to/learning-tutor
-```
-
-Restart Claude Code after adding the plugin directory.
+Then restart Claude Code. The plugin will be automatically downloaded from GitHub.
 
 ### Use
 
