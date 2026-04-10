@@ -1,0 +1,16 @@
+{
+  "name": "learning-tutor",
+  "version": "1.0.0",
+  "description": "AI-powered personal tutor for Claude Code. Supports structured learning, spaced repetition, adaptive teaching styles, and learner profile tracking.",
+  "author": {
+    "name": "learning-tutor contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "tutor",
+    "education",
+    "spaced-repetition",
+    "teaching"
+  ]
+}
